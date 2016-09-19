@@ -1,4 +1,17 @@
-## Test Driven Development Demo
+# Webinar and Workshops
+
+This repository contains a number of webinars and workshops that can be used to demonstrate ideas and concepts.
+
+* Test Driven Cookbook Development
+* Writing Great Unit Tests
+* Managing Secrets with Chef
+* Static Analysis
+* Better Tools for a Better Life
+* The Ruby Behind Chef
+
+Below you will find an abstract, agenda, and the setup requirements for each of these experiences.
+
+## Test Driven Cookbook Development
 
 ### Abstract / Description
 
@@ -20,7 +33,7 @@ In this webinar the facilitator will explain what is unit testing and integratio
 
 Everything is created from scratch within the demonstration.
 
-## Writing Great Unit Tests with ChefSpec Demo
+## Writing Great Unit Tests with ChefSpec
 
 ### Abstract / Description
 

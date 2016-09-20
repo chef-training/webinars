@@ -56,3 +56,103 @@ In this webinar the facilitator focuses on the power of unit tests. The show whe
 * A cookbook named 'httpd' that has a default recipe that installs, configures, and starts the apache service with a single integration test that verifies a working web server.
 
 > See the 'Review Existing Cookbook' section for the setup of the cookbook.
+
+
+## Managing Secrets with Chef
+
+### Abstract / Description
+
+Managing infrastructure requires the coordination of many different applications and actors. Enabling secure communication between applications and the actors requires that a number of systems to trust one another. This means the distribution of keys, passwords, and certificates. When managing your infrastructure it can be difficult to maintain and distribute these secrets in a secure way.
+
+In this webinar the facilitator will explain why it is important to manage secrets and how Chef is able to manage secrets through tools like encrypted data bags and Chef Vault. When we're done you'll understand the importance of security through encryption (over obscurity), how to securely manage those secrets with Chef, and know where to continue to build these skills.
+
+### Agenda
+
+* Create a Cookbook with a Secret
+* Storing Data in a Data Bags
+* Encrypting Data in Data Bags
+* Encrypting Data in Data Bags with Chef Vault
+
+### Workstation Setup
+
+* Installation of ChefDK 0.10.10
+* An instance able to run the `openssl` command
+* A Chef Server
+* A single node to bootstrap and apply a cookbook through Chef Server
+
+
+## Static Analysis
+
+### Abstract / Description
+
+Static analysis refers to checks that are performed on code before it's run. It can be done by humans, in a code review, and with tools (also known as linting tools). The Chef Development Kit (ChefDK) includes a static analysis tool called Foodcritic. Foodcritic analyzes your Chef recipes to see if they conform to a set of rules and notifies you when it sees something, such as incorrect syntax, that violates a rule.
+
+In this webinar the facilitator will talk about the benefits of using static analysis tools, of conducting code reviews and, in general, of maintaining common coding standards for your organization. We'll show you how to use Foodcritic and how to interpret its results. We'll also expand our scope a bit to include a more general linting tool called RuboCop. When we're done, you'll know why static analysis is a good idea, how to perform a code review, and be ready to use Foodcritic with your own cookbooks.
+
+### Workstation Setup
+
+### Agenda
+
+* What is static analysis? Why static analysis?
+* What is Foodcritic and how do I use it?
+* What is Rubocop and how do I use it?
+
+### Workstation Setup
+
+* Installation of ChefDK 0.10.10
+* A cookbook to examine with Foodcritic and Rubocop
+
+> This content has no particular cookbook in mind. The slides introduce the concepts, the core commands, and a few flags but are not tied to a particular cookbook.
+
+
+## Better Tools for a Better Life
+
+### Abstract / Description
+
+The infrastructure you manage with Chef is a complex machine. This complexity is mirrored in the cookbooks you develop and the data stored in your Chef server. It is an ongoing effort to keep track of the state of that machine and to keep up with all the functionality included in your (many) cookbooks. However, the right tools can help. With them, you can develop code faster, maintain cleaner code, and better understand your existing code.
+
+In this webinar the facilitator will demonstrate how better editor and debugger tools can improve your work life. They will show you how the right text editor can make it easier to write code. Next they will demonstrate how tools like Rake and Guard can consolidate tasks and automate tests. Finally, he'll show you how Pry can help you to debug your recipes.
+
+### Agenda
+
+* Why Are Your Tools Important
+* Exploring Features of a Modern Editor
+* Capturing Common Tasks with Rake
+* Automating Execution with Guard
+* Debugging with Pry
+
+### Workstation Setup
+
+* Installation of Chef DK
+* A Modern Text Editor
+
+> This content talks about using a text editor to show off syntax highlighting, project / folder view, code snippets / plugin support, and keyboard shortcuts. A single editor can be used. To ensure reaching a wider audience more editors could be installed.
+
+* An cookbook named 'httpd'. This cookbook that deploys apache, writes a simple html file, and starts the service. The actual contents of the recipe could be written demonstrating code snippets and keyboard shortcuts.
+
+> This content has no particular cookbook in mind. The slides introduce the concepts, the core commands, and a few flags but are not tied to a particular cookbook.
+
+
+## The Ruby Behind Chef
+
+### Abstract / Description
+
+Chef is built in Ruby - a conscious choice for its great flexibility and developer friendliness. For some people, learning the language can feel difficult because most examples lack your perspective as a Chef practitioner. In this interactive webinar, we invite you to follow along in your favorite editor as we dive through the source code to teach you core Ruby concepts.
+
+Join us to learn:
+
+- Fundamental Ruby concepts and how they create the Recipe Domain Specific Language and the tools that power Chef
+
+- Pry’s ability to navigate and query source code
+
+### Agenda
+
+* Loading a Recipe File
+* Evaluate Core Resources
+* Evaluate Resource Blocks
+
+### Workstation Setup
+
+* Installation of Chef DK
+
+> This content walks outlines concepts within the slides but does not give the steps to complete the work.

@@ -8,6 +8,7 @@ This repository contains a number of webinars and workshops that can be used to 
 * Static Analysis
 * Better Tools for a Better Life
 * The Ruby Behind Chef
+* Writing Elegant Tests
 
 Below you will find an abstract, agenda, and the setup requirements for each of these experiences.
 
@@ -156,3 +157,42 @@ Join us to learn:
 * Installation of Chef DK
 
 > This content walks outlines concepts within the slides but does not give the steps to complete the work.
+
+
+## Writing Elegant Tests
+
+### Abstract / Description
+
+You’ve probably found that the many tests you write for all your cookbooks require as much or more effort than maintaining the cookbooks themselves. You’ve also probably noticed that there’s quite a bit of boilerplate code required to verify all the recipes, resources, and helpers. The consequence is that much of your test code is duplicated from one cookbook to another.
+
+In this webinar, Franklin Webber, Training and Technical Content Lead at Chef, will show you techniques that bring elegance to a cookbook’s tests. You’ll learn how to eliminate redundancy, rebuild common patterns into helpers, and extract those helpers into a portable library.
+
+Join to learn how to:
+
+- Refactor tests for more elegant code
+- Craft reusable testing resources and helpers
+- Extract testing resources into a Ruby gem
+
+Who Should Attend:
+
+- Anyone who writes tests for cookbooks
+
+### Agenda
+
+* let
+* shared_examples
+* def method
+* shared_context
+* require
+* alias_example_group_to
+* creating a Ruby gem
+* questions
+* wrap up
+
+### Workstation Setup
+
+* Installation of Chef DK
+
+> This content walks outlines concepts within the slides but does not give the steps to complete the work.
+
+* Clone the following repository: https://github.com/chef-training/elegant_tests-repo.git
